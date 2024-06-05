@@ -108,7 +108,7 @@ local defaults; do
             })
             
             if options.underlinecolor == "rainbow" then
-                table.insert(library.rainbowtable, newWindow:FindFirstChild('Underline'))
+                library.rainbowtable[newWindow:FindFirstChild('Underline')] = newWindow:FindFirstChild('Underline')
             end
 
             local window = setmetatable({
@@ -1120,7 +1120,7 @@ local defaults; do
         while true do
             for i=0, 1, 1 / 300 do              
                 for _, obj in next, library.rainbowtable do
-                    obj.BackgroundColor3 = Color3.fromHSV(i, 1, 1);
+                    obj[props[obj.ClassName]] = Color3.fromHSV(i, 1, 1);
                 end
                 wait()
             end;
