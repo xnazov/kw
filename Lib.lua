@@ -108,7 +108,7 @@ local defaults; do
             })
             
             if options.underlinecolor == "rainbow" then
-                library.rainbowtable[newWindow:FindFirstChild('Underline')] = newWindow:FindFirstChild('Underline')
+                table.insert(library.rainbowtable, newWindow:FindFirstChild('Underline'))
             end
 
             local window = setmetatable({
@@ -172,7 +172,7 @@ local defaults; do
             return c
         end
         
-        function types:Label(text,rainbow)
+        function types:Label(text)
             local v = game:GetService'TextService':GetTextSize(text, 18, Enum.Font.SourceSans, Vector2.new(math.huge, math.huge))
             local object = library:Create('Frame', {
                 Size = UDim2.new(1, 0, 0, v.Y + 5);
@@ -193,10 +193,6 @@ local defaults; do
                 Parent = self.container
             })
             self:Resize();
-            if rainbow then
-                library.rainbowtable[object:FindFirstChild('TextLabel')] = object:FindFirstChild('TextLabel')
-            end    
-            return object:FindFirstChild('TextLabel');
         end
 
         function types:Toggle(name, options, callback)
@@ -483,7 +479,7 @@ local defaults; do
             self:Resize();
         end
     
-        function types:Section(name,rainbow)
+        function types:Section(name)
             local order = self:GetOrder();
             local determinedSize = UDim2.new(1, 0, 0, 25)
             local determinedPos = UDim2.new(0, 1, 0, 5);
@@ -521,10 +517,6 @@ local defaults; do
             });
         
             self:Resize();
-            if rainbow then
-                library.rainbowtable[check:FindFirstChild('section_lbl')] = check:FindFirstChild('section_lbl')
-            end
-            return check:FindFirstChild('section_lbl');
         end
 
         function types:Slider(name, options, callback)
@@ -1120,7 +1112,7 @@ local defaults; do
         while true do
             for i=0, 1, 1 / 300 do              
                 for _, obj in next, library.rainbowtable do
-                    obj[props[obj.ClassName]] = Color3.fromHSV(i, 1, 1);
+                    obj.BackgroundColor3 = Color3.fromHSV(i, 1, 1);
                 end
                 wait()
             end;
