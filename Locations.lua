@@ -70,15 +70,15 @@ return {
             ZoneSurges = {Position = Vector3.new(-10911.31640625, 12.426255226135254, 4151.3173828125), Zone = "Holographic City"},
         },
         Merchant = {
+            IndexMerchant = {Position = Vector3.new(-9991.515625, -2.762001037597656, -564.484375), Zone = "Tech Spawn"},
+        },
+        Vending = {
             BundleVendingMachine = {Position = Vector3.new(-9264.8583984375, 12.98900032043457, 2344.248046875), Zone = "Neon City"},
             BundleVendingMachine2 = {Position = Vector3.new(-10449.5810546875, 12.325398445129395, 4149.1171875), Zone = "Dark Tech Cove"},
             EnchantVendingMachine3 = {Position = Vector3.new(-8744.7666015625, 12.415260314941406, 326.88671875), Zone = "Cyber Cove"},
             EnchantVendingMachine4 = {Position = Vector3.new(-8693.658203125, 12.27867603302002, 2114.215087890625), Zone = "Comet Planet"},
             EnchantVendingMachine5 = {Position = Vector3.new(-10243.4111328125, 12.314648628234863, 2717.532958984375), Zone = "Steampunk Town"},
             FruitVendingMachine3 = {Position = Vector3.new(-10875.4921875, 12.38376235961914, 4665.99609375), Zone = "Glitch City"},
-            IndexMerchant = {Position = Vector3.new(-9991.515625, -2.762001037597656, -564.484375), Zone = "Tech Spawn"},
-        },
-        Vending = {
             PotionVendingMachine3 = {Position = Vector3.new(-8622.6826171875, 13.598320007324219, -323.408203125), Zone = "Data Tree Farm"},
             PotionVendingMachine4 = {Position = Vector3.new(-9678.0986328125, 55.48899841308594, 1061.14599609375), Zone = "Cracked Iceberg"},
             PotionVendingMachine5 = {Position = Vector3.new(-10413.50390625, 12.335999488830566, 3345.493896484375), Zone = "Cyberpunk Undercity"},
@@ -97,6 +97,17 @@ return {
         },
     },
     [3] = {
+        Machine = {
+            GoldMachine = {Position = Vector3.new(-10122.3388671875, 4.015876293182373, -7424.61669921875), Zone = "Void Spawn"},
+            MailboxMachine = {Position = Vector3.new(-10152.203125, 4.220942497253418, -7447.34521484375), Zone = "Void Spawn"},
+            PetIndexMachine = {Position = Vector3.new(-10182.392578125, 4.262174606323242, -7459.322265625), Zone = "Void Spawn"},
+            RainbowMachine = {Position = Vector3.new(-10146.7880859375, 3.8961520195007324, -7290.984375), Zone = "Void Spawn"},
+            SpinnyWheel = {Position = Vector3.new(-10178.3515625, 4.329585075378418, -7284.09375), Zone = "Void Spawn"},
+            SuperMachine = {Position = Vector3.new(-10159.6142578125, -0.10452800244092941, -7368.4296875), Zone = "Void Spawn"}
+        },
+        Merchant = {
+            IndexMerchant = {Position = Vector3.new(-10180.23046875, -22.334999084472656, -7465.04296875), Zone = "Void Spawn"},
+        },
         Vending = {
             OPPotionsVendingMachine2 = {Position = Vector3.new(-2141.113037109375, 14.368104934692383, -8565.8486328125), Zone = "Prison HQ"},
             RareEnchantsVendingMachine2 = {Position = Vector3.new(-4558.20947265625, 731.6134033203125, -12794.93359375), Zone = "Jungle Island"},
@@ -106,17 +117,6 @@ return {
             DailyEnchants5 = {Position = Vector3.new(-2469.793701171875, 13.41515827178955, -8572.0537109375), Zone = "Prison Cafeteria"},
             DailyItems5 = {Position = Vector3.new(-3595.74560546875, 370.1795654296875, -12757.9521484375), Zone = "Ocean Island"},
             DailyPotions6 = {Position = Vector3.new(-2779.084716796875, 194.80299377441406, -21673.703125), Zone = "Hacker Cave"},
-        },
-        Merchant = {
-            IndexMerchant = {Position = Vector3.new(-10180.23046875, -22.334999084472656, -7465.04296875), Zone = "Void Spawn"},
-        },
-        Machine = {
-            GoldMachine = {Position = Vector3.new(-10122.3388671875, 4.015876293182373, -7424.61669921875), Zone = "Void Spawn"},
-            MailboxMachine = {Position = Vector3.new(-10152.203125, 4.220942497253418, -7447.34521484375), Zone = "Void Spawn"},
-            PetIndexMachine = {Position = Vector3.new(-10182.392578125, 4.262174606323242, -7459.322265625), Zone = "Void Spawn"},
-            RainbowMachine = {Position = Vector3.new(-10146.7880859375, 3.8961520195007324, -7290.984375), Zone = "Void Spawn"},
-            SpinnyWheel = {Position = Vector3.new(-10178.3515625, 4.329585075378418, -7284.09375), Zone = "Void Spawn"},
-            SuperMachine = {Position = Vector3.new(-10159.6142578125, -0.10452800244092941, -7368.4296875), Zone = "Void Spawn"}
         },
     },
 }
